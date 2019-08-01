@@ -1,60 +1,128 @@
-/* font-family: "PFBeauSansPro-Black"; */
 @font-face {
-    font-family: "PFBeauSansPro-Black";
-    src: url("../media/fonts/PFBeauSansPro-Black.eot");
-    src: url("../media/fonts/PFBeauSansPro-Black.eot?#iefix")format("embedded-opentype"),
-    url("../media/fonts/PFBeauSansPro-Black.woff") format("woff"),
-    url("../media/fonts/PFBeauSansPro-Black.ttf") format("truetype");
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProBla.otf");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProBlaIta.otf");
+    font-style: italic;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProBol.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProBolIta.otf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProIta.otf");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProLig.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProLigIta.otf");
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProMed.otf");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "GothaPro";
+    src: url("../media/fonts/GothamCyrillic/GothaProMedIta.otf");
+    font-style: italic;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "SegoeUI";
+    src: url("../media/fonts/SegoeUI/SegoeUIBold.ttf");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "SegoeUI";
+    src: url("../media/fonts/SegoeUI/SegoeUIItalic.ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SegoeUI";
+    src: url("../media/fonts/SegoeUI/SegoeUIRegular.ttf");
     font-style: normal;
     font-weight: normal;
 }
+
 /* font-family: "PFBeauSansPro-Bold"; */
-@font-face {
-    font-family: "PFBeauSansPro-Bold";
-    src: url("../media/fonts/PFBeauSansPro-Bold.eot");
-    src: url("../media/fonts/PFBeauSansPro-Bold.eot?#iefix")format("embedded-opentype"),
-    url("../media/fonts/PFBeauSansPro-Bold.woff") format("woff"),
-    url("../media/fonts/PFBeauSansPro-Bold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "PFBeauSansPro-Light"; */
-@font-face {
-    font-family: "PFBeauSansPro-Light";
-    src: url("../media/fonts/PFBeauSansPro-Light.eot");
-    src: url("../media/fonts/PFBeauSansPro-Light.eot?#iefix")format("embedded-opentype"),
-    url("../media/fonts/PFBeauSansPro-Light.woff") format("woff"),
-    url("../media/fonts/PFBeauSansPro-Light.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "PFBeauSansPro-SemiBold"; */
-@font-face {
-    font-family: "PFBeauSansPro-SemiBold";
-    src: url("../media/fonts/PFBeauSansPro-SemiBold.eot");
-    src: url("../media/fonts/PFBeauSansPro-SemiBold.eot?#iefix")format("embedded-opentype"),
-    url("../media/fonts/PFBeauSansPro-SemiBold.woff") format("woff"),
-    url("../media/fonts/PFBeauSansPro-SemiBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "PFBeauSansPro-Thin"; */
-@font-face {
-    font-family: "PFBeauSansPro-Thin";
-    src: url("../media/fonts/PFBeauSansPro-Thin.eot");
-    src: url("../media/fonts/PFBeauSansPro-Thin.eot?#iefix")format("embedded-opentype"),
-    url("../media/fonts/PFBeauSansPro-Thin.woff") format("woff"),
-    url("../media/fonts/PFBeauSansPro-Thin.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "PFBeauSansPro-Thin"; */
-@font-face {
-    font-family: "PFBeauSansPro-Bbook";
-    src: url("../media/fonts/PFBeauSansPro-Bbook.eot");
-    src: url("../media/fonts/PFBeauSansPro-Bbook.eot?#iefix")format("embedded-opentype"),
-    url("../media/fonts/PFBeauSansPro-Bbook.woff") format("woff"),
-    url("../media/fonts/PFBeauSansPro-Bbook.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+//@font-face {
+//    font-family: "PFBeauSansPro-Bold";
+//    src: url("../media/fonts/PFBeauSansPro-Bold.eot");
+//    src: url("../media/fonts/PFBeauSansPro-Bold.eot?#iefix")format("embedded-opentype"),
+//    url("../media/fonts/PFBeauSansPro-Bold.woff") format("woff"),
+//    url("../media/fonts/PFBeauSansPro-Bold.ttf") format("truetype");
+//    font-style: normal;
+//    font-weight: normal;
+//}
+///* font-family: "PFBeauSansPro-Light"; */
+//@font-face {
+//    font-family: "PFBeauSansPro-Light";
+//    src: url("../media/fonts/PFBeauSansPro-Light.eot");
+//    src: url("../media/fonts/PFBeauSansPro-Light.eot?#iefix")format("embedded-opentype"),
+//    url("../media/fonts/PFBeauSansPro-Light.woff") format("woff"),
+//    url("../media/fonts/PFBeauSansPro-Light.ttf") format("truetype");
+//    font-style: normal;
+//    font-weight: normal;
+//}
+///* font-family: "PFBeauSansPro-SemiBold"; */
+//@font-face {
+//    font-family: "PFBeauSansPro-SemiBold";
+//    src: url("../media/fonts/PFBeauSansPro-SemiBold.eot");
+//    src: url("../media/fonts/PFBeauSansPro-SemiBold.eot?#iefix")format("embedded-opentype"),
+//    url("../media/fonts/PFBeauSansPro-SemiBold.woff") format("woff"),
+//    url("../media/fonts/PFBeauSansPro-SemiBold.ttf") format("truetype");
+//    font-style: normal;
+//    font-weight: normal;
+//}
+///* font-family: "PFBeauSansPro-Thin"; */
+//@font-face {
+//    font-family: "PFBeauSansPro-Thin";
+//    src: url("../media/fonts/PFBeauSansPro-Thin.eot");
+//    src: url("../media/fonts/PFBeauSansPro-Thin.eot?#iefix")format("embedded-opentype"),
+//    url("../media/fonts/PFBeauSansPro-Thin.woff") format("woff"),
+//    url("../media/fonts/PFBeauSansPro-Thin.ttf") format("truetype");
+//    font-style: normal;
+//    font-weight: normal;
+//}
+///* font-family: "PFBeauSansPro-Thin"; */
+//@font-face {
+//    font-family: "PFBeauSansPro-Bbook";
+//    src: url("../media/fonts/PFBeauSansPro-Bbook.eot");
+//    src: url("../media/fonts/PFBeauSansPro-Bbook.eot?#iefix")format("embedded-opentype"),
+//    url("../media/fonts/PFBeauSansPro-Bbook.woff") format("woff"),
+//    url("../media/fonts/PFBeauSansPro-Bbook.ttf") format("truetype");
+//    font-style: normal;
+//    font-weight: normal;
+//}

@@ -1,6 +1,5 @@
 $slide: 'slide-00';
-@import "engine";
-@import "theme";
+@import "_engine";
 
 .#{$slide} {
   .footer {

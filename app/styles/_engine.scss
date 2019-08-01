@@ -2,6 +2,7 @@
 @import "_variables";
 @import "_mixins";
 @import "_fonts";
+@import "_theme";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -20,12 +21,20 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: 'SegoeUI';
+}
+
 .hide {
   display: none !important;
 }
 .inactivepopup {
   opacity: .5;
 }
+
+//.popup {
+//  display: none;
+//}
 
 .slide-wrap {
   @include rel();
@@ -38,4 +47,67 @@ a {
 .slide-wrap {
   // bg
   @include bg-size($slide + '/bg.png', contain);
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  height: 104px;
+  display: flex;
+  padding: 0 60px;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+
+  &__logo {
+    width: 244px;
+    margin-right: 20px;
+  }
+
+  &__tag {
+    flex: 1;
+    font-weight: bold;
+    font-size: 44px;
+
+    &--drink {
+      color: #F8A896
+    }
+  }
+
+  &__logo-stada {
+    width: 108px;
+  }
+}
+
+.footer {
+  height: 62px;
+  background: rgba(130, 136, 149, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__menu {
+    width: 102px;
+    padding: 22px 0 0 15px;
+  }
+}
+
+.menu {
+  min-width: 300px;
+  background: rgba(130, 136, 149, 0.6);
+  bottom: 63px;
+  left: 15px;
+  transform: none;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+
+  }
 }
