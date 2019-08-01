@@ -1,6 +1,38 @@
 $slide: 'slide-02';
 @import '_engine';
 .#{$slide} {
+	color: white;
+
+	.content {
+		width: 322px;
+		position: absolute;
+		top: 166px;
+		right: 59px;
+	}
+
+	.list {
+		margin-top: -5px;
+
+		&__item {
+			margin-bottom: 23px;
+
+			&:last-child {
+				margin-top: 39px;
+			}
+		}
+
+		&__title {
+			font-size: 20px;
+		}
+	}
+
+	.quo {
+		font-weight: bold;
+		position: absolute;
+		bottom: -85px;
+		left: 65px;
+		font-size: 20px;
+	}
 
 }
 // animations
