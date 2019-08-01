@@ -1,0 +1,109 @@
+// custon global styles
+body {
+  @include text(16px,#000,'Arial');
+}
+
+// popup-bg styles
+.popup-bg {
+  @include block(100%, 100%);
+  @include abs-point(0, 0);
+  background-color: $popup_bg;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s opacity;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+//common popup styles
+.popup {
+  height: auto;
+  min-width: 867px;
+  @include abs-point(50%, 50%);
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s all;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .close {
+    @include block(52px, 52px);
+    @include abs(-19px, -19px, auto, auto);
+    @include bg-size('close.png');
+  }
+
+  .content {
+    padding: 40px;
+    line-height: 20px;
+    letter-spacing: 0;
+
+    .popup-title {
+      text-align: center;
+      letter-spacing: inherit;
+    }
+
+    strong {
+      font-weight: bolder;
+    }
+  }
+}
+
+//instruction popup
+#popup-id {
+  .links {
+    text-align: center;
+
+    .link {
+      padding: 16px 30px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 50px;
+      background: green;
+
+      &.link-kz {
+        margin-right: 90px;
+      }
+
+      &.link-ru {
+      }
+    }
+  }
+}
+
+
+//footer
+.footer {
+  @include block(100%, 184px);
+  @include abs(auto, auto, 0, 0);
+  z-index: 0;
+
+  .dop,
+  .info,
+  .instr {
+    @include abs(auto, auto, 27px);
+    background: green;
+  }
+
+  .info {
+    @include block(42px, 55px);
+    left: 260px;
+  }
+
+  .dop {
+    @include block(46px, 55px);
+    left: 324px;
+  }
+
+  .instr {
+    @include block(275px, 73px);
+    left: 704px;
+  }
+}

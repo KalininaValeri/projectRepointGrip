@@ -1,0 +1,19 @@
+$slide: 'slide-00';
+@import "engine";
+@import "theme";
+
+.#{$slide} {
+  .footer {
+    .dop {
+      // display: none;
+    }
+  }
+}
+
+// animations
+.#{$slide} {
+  // inital state
+  &.slide-active {
+    // active state
+  }
+}

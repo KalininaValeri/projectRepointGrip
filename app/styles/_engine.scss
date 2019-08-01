@@ -1,0 +1,41 @@
+@import "_reset";
+@import "_variables";
+@import "_mixins";
+@import "_fonts";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+button {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none !important;
+}
+.inactivepopup {
+  opacity: .5;
+}
+
+.slide-wrap {
+  @include rel();
+  @include block(1024px, 768px);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+//background image for each slide
+.slide-wrap {
+  // bg
+  @include bg-size($slide + '/bg.png', contain);
+}

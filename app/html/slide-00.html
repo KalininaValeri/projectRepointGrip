@@ -1,0 +1,36 @@
+@@include('header.html', {"slide-id": "slide-00"})
+
+<div>
+		<div data-popup="popup-video" data-vid-name="vid1.mp4"></div>
+		<div data-popup="popup-video" data-vid-name="vid2.mp4"></div>
+</div>
+
+<div class="code">
+	<span class="ru">русский</span>
+	<span class="az">азер</span>
+</div>
+
+<!-- video pop-up -->
+<div class="popup" id="popup-video">
+  <div class="close"></div>
+  <div class="content">
+    <video data-src="media/videos/slide-00/" src="" type="video/mp4"></video>
+  </div>
+</div>
+<!-- main pop-up -->
+<div class="popup" id="popup-info">
+  <div class="close"></div>
+  <div class="content">
+    pop-up111
+  </div>
+</div>
+<!-- dop pop-up -->
+<!-- <div class="popup" id="popup-dop">
+  <div class="close"></div>
+  <div class="content">
+    pop-up2
+  </div>
+</div> -->
+
+
+@@include('footer.html', {"slide-id": "slide-00"})
