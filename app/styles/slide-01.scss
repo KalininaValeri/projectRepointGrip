@@ -1,6 +1,15 @@
 $slide: 'slide-01';
 @import '_engine';
 .#{$slide} {
+	.content {
+		color: white;
+		text-align: right;
+		width: 342px;
+		font-size: 30px;
+		position: absolute;
+		right: 53px;
+		top: 164px;
+	}
 
 }
 // animations
