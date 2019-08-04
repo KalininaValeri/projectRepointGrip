@@ -1,7 +1,51 @@
 $slide: 'slide-03';
 @import '_engine';
 .#{$slide} {
+	color: white;
 
+	.content {
+		margin: 57px 61px;
+		width: 420px;
+	}
+
+	.list {
+		font-size: 20px;
+		font-weight: bold;
+
+		&__title {
+			font-size: 30px;
+			border-bottom: 1px solid rgba(216, 216,216, 0.36);
+			padding-bottom: 8px;
+		}
+
+		&__item {
+			border-bottom: 1px solid rgba(216, 216,216, 0.36);
+		}
+
+		&__wrapper {
+			display: flex;
+			padding: 12px 0;
+		}
+
+		&__item-title {
+			flex: 1;
+		}
+
+		&__item-active {
+			width: 100%;
+			font-size: 16px;
+			font-weight: normal;
+			padding: 17px 0 19px;
+		}
+	}
+	.information {
+		width: 75px;
+		height: 75px;
+		background: red;
+		position: absolute;
+		bottom: 133px;
+		left: 540px;
+	}
 }
 // animations
 .#{$slide} {

@@ -73,8 +73,26 @@ ul {
   background: white;
 
   &__logo {
-    width: 244px;
     margin-right: 20px;
+    flex: 1;
+
+    &--null {
+
+    }
+
+    &--drink {
+      width: 631px;
+    }
+
+    &--steak {
+      width: 362px;
+    }
+
+    &--kaps {
+      width: 447px;
+    }
+
+
   }
 
   &__tag {
