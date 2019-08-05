@@ -19,10 +19,13 @@ body {
 
 //common popup styles
 .popup {
-  height: auto;
-  min-width: 867px;
-  @include abs-point(50%, 50%);
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: #ffffff;
   z-index: 1;
   opacity: 0;
@@ -34,8 +37,8 @@ body {
   }
 
   .close {
-    @include block(52px, 52px);
-    @include abs(-19px, -19px, auto, auto);
+    @include block(75px, 75px);
+    @include abs(560px, 60px, auto, auto);
     @include bg-size('close.png');
   }
 

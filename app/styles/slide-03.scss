@@ -38,13 +38,20 @@ $slide: 'slide-03';
 			padding: 17px 0 19px;
 		}
 	}
+
 	.information {
 		width: 75px;
 		height: 75px;
-		background: red;
 		position: absolute;
 		bottom: 133px;
 		left: 540px;
+	}
+
+	.text {
+		width: 458px;
+		position: absolute;
+		top: 150px;
+		right: 0;
 	}
 }
 // animations
