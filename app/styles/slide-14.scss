@@ -2,6 +2,17 @@ $slide: 'slide-14';
 @import '_engine';
 .#{$slide} {
 
+	.content {
+		position: relative;
+
+		&__text {
+			position: absolute;
+			top: 40px;
+    	right: 77px
+			width: 304px;
+		}
+	}
+
 }
 // animations
 .#{$slide} {
