@@ -1,6 +1,18 @@
 $slide: 'slide-09';
 @import '_engine';
 .#{$slide} {
+	.content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		&__text {
+			width: 330px;
+			position: absolute;
+			top: 41px;
+    	right: 52px;
+		}
+	}
 
 }
 // animations
