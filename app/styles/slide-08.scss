@@ -1,7 +1,30 @@
 $slide: 'slide-08';
 @import '_engine';
 .#{$slide} {
+	.content {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+	.women {
+		width: 766px;
+		height: 502px;
+		position: absolute;
+		bottom: 105px;
 
+		img {
+			opacity: 0;
+			transition: opacity 400ms;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.active {
+			opacity: 1;
+			transition: opacity 400ms;
+		}
+	}
 }
 // animations
 .#{$slide} {
