@@ -48,14 +48,14 @@ cegedim.flow.init({
     },
     '11_2': {
         prev: '10_2',
+        next: '12_2',
+    },
+    '12_2': {
+        prev: '11_2',
         next: false,
     },
-    '12_3': {
-        prev: false,
-        next: '13_3',
-    },
     '13_3': {
-        prev: '12_3',
+        prev: false,
         next: '14_3',
     },
     '14_3': {
