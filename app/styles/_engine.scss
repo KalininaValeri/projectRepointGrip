@@ -71,6 +71,8 @@ ul {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
   background: white;
+  z-index: 10;
+  position: relative;
 
   &__logo {
     margin-right: 20px;
@@ -91,8 +93,6 @@ ul {
     &--kaps {
       width: 447px;
     }
-
-
   }
 
   &__tag {
@@ -155,10 +155,40 @@ ul {
   }
 }
 
-.content__title--1 {
-  font-weight: bold;
-  font-size: 36px;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 50px;
+.content__title {
+    &--1 {
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  &--2 {
+    font-family: 'GothaPro';
+    font-size: 50px;
+    color: #F7D501;
+
+    span {
+      color: white;
+    }
+  }
+}
+
+.content__subtitle {
+  &--1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+}
+
+.content__caption-text {
+  &--1 {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+  }
 }
