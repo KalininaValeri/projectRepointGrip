@@ -2,6 +2,69 @@ $slide: 'slide-05';
 @import '_engine';
 .#{$slide} {
 
+	.day {
+		.slide-1 {
+			left: 0;
+		}
+
+		.slide-2 {
+			left: 100%;
+		}
+
+		.trigger__runner {
+			left: 60px;
+		}
+	}
+
+	.night {
+		.slide-1 {
+			left: -100%;
+		}
+
+		.slide-2 {
+			left: 0;
+		}
+
+		.trigger__runner {
+			left: 330px;
+		}
+	}
+
+	.day, .night {
+		position: relative;
+		height: 100%;
+	}
+
+	.slider {
+		position: relative;
+	}
+
+	.slider__item {
+		position: absolute;
+		top: -104px;
+		transition: left 400ms;
+	}
+
+	.trigger {
+		position: absolute;
+		width: 454px;
+		bottom: 184px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		&__panel {
+			width: 454px;
+		}
+
+		&__runner {
+			position: absolute;
+			width: 61px;
+			top: 50%;
+			transform: translateY(-48%);
+			transition: left 400ms;
+		}
+	}
+
 }
 // animations
 .#{$slide} {
