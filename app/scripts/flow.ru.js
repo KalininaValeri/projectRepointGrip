@@ -68,6 +68,10 @@ cegedim.flow.init({
     },
     '16_3': {
         prev: '15_3',
+        next: '17_3',
+    },
+    '17_3': {
+        prev: '16_3',
         next: false,
     },
 });

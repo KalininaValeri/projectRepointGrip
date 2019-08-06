@@ -1,0 +1,27 @@
+$slide: 'slide-17';
+@import '_engine';
+.#{$slide} {
+
+	.content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.btn {
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		top: 481px;
+		right: 68px;
+	}
+}
+// animations
+.#{$slide} {
+
+
+// inital state
+	&.slide-active {
+		// active state
+	}
+}
