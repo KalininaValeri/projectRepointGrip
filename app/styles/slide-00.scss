@@ -2,6 +2,108 @@ $slide: 'slide-00';
 @import "_engine";
 
 .#{$slide} {
+  .code {
+    position: relative;
+    height: 100%;
+  }
+  .stada {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 183px;
+  }
+
+  .pack {
+    position: absolute;
+
+    &.active {
+      .pack__active {
+        display: block;
+      }
+    }
+
+    img {
+      position: relative;
+    }
+
+    &__active {
+      display: none;
+      height: 60%;
+      width: 90%;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 100px 0 #0062af;
+    }
+
+    &--kaps {
+      width: 224px;
+      top: 342px;
+      left: 59px;
+
+      .pack__active {
+        height: 82%;
+        width: 98%;
+      }
+    }
+
+    &--steak {
+      width: 245px;
+      top: 271px;
+      right: 45px;
+
+      .pack__active {
+        width: 84%;
+        height: 69%;
+      }
+    }
+
+    &--drink {
+      width: 378px;
+      top: 316px;
+      left: 329px;
+
+      .pack__active {
+        height: 79%;
+        width: 96%;
+      }
+    }
+  }
+
+  .slider {
+    height: 85px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &__item {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      transition: left 800ms;
+
+      &.active {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &--kaps {
+        width: 454px;
+      }
+      &--steak {
+        width: 457px;
+      }
+      &--drink {
+        width: 613px;
+      }
+    }
+  }
+
   .header {
     display: none;
   }
