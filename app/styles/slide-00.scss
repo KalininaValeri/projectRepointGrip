@@ -2,7 +2,11 @@ $slide: 'slide-00';
 @import "_engine";
 
 .#{$slide} {
+  .header {
+    display: none;
+  }
   .footer {
+    display: none;
     .dop {
       // display: none;
     }
