@@ -74,12 +74,20 @@ ul {
   z-index: 10;
   position: relative;
 
+  &.not-active {
+    display: none;
+  }
+
   &__logo {
     margin-right: 20px;
     flex: 1;
 
-    &--null {
+    img {
+      display: none;
 
+      &.active {
+        display: block;
+      }
     }
 
     &--drink {
@@ -112,7 +120,7 @@ ul {
 
 .footer {
   height: 62px;
-  background: rgba(130, 136, 149, 0.6);
+  background: rgba(130, 136, 149, 0.85);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -128,7 +136,7 @@ ul {
 .menu {
   position: absolute;
   min-width: 300px;
-  background: rgba(130, 136, 149, 0.6);
+  background: rgba(130, 136, 149, 0.85);
   top: 363px;
   left: -300px;
   transform: none;
