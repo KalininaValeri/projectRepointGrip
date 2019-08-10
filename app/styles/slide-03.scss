@@ -53,9 +53,30 @@ $slide: 'slide-03';
 		top: 150px;
 		right: 0;
 	}
+
+	.animation {
+		animation: opacity 400ms;
+		animation-delay: 400ms;
+		animation-fill-mode: forwards;
+		opacity: 0;
+
+		&--1 {
+			animation-delay: 400ms;
+		}
+
+		&--2 {
+			animation-delay: 600ms;
+		}
+	}
 }
+
+
 // animations
 .#{$slide} {
+	@keyframes opacity {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
 
 
 // inital state

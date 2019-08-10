@@ -9,11 +9,18 @@ $slide: 'slide-01';
 		position: absolute;
 		right: 53px;
 		top: 164px;
+		animation: opacity 400ms;
+		animation-delay: 400ms;
+		animation-fill-mode: forwards;
+		opacity: 0;
 	}
-
 }
 // animations
 .#{$slide} {
+@keyframes opacity {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
 
 
 // inital state
