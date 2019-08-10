@@ -2,69 +2,15 @@ $slide: 'slide-04';
 @import '_engine';
 .#{$slide} {
 
-	.position-1 {
-		.text-1 {
-			left: 0;
-		}
-		.text-2 {
-			left: 118%;
-		}
-		.text-3 {
-			left: 236%;
-		}
-
-		.slide-1 {
-			left: 0;
-		}
-		.slide-2 {
-			left: 100%;
-		}
-		.slide-3 {
-			left: 200%;
+	#wrapper.left {
+		.slider__item.right {
+			z-index: -10;
 		}
 	}
 
-	.position-2 {
-		.text-1 {
-			left: -118%;
-		}
-		.text-2 {
-			left: 0;
-		}
-		.text-3 {
-			left: 118%;
-		}
-
-		.slide-1 {
-			left: -100%;
-		}
-		.slide-2 {
-			left: 0;
-		}
-		.slide-3 {
-			left: 100%;
-		}
-	}
-
-	.position-3 {
-		.text-1 {
-			left: -236%;
-		}
-		.text-2 {
-			left: -118%;
-		}
-		.text-3 {
-			left: 0;
-		}
-
-		.slide-1 {
-			left: -200%;
-		}
-		.slide-2 {
-			left: -100%;
-		}
-		.slide-3 {
-			left: 0%;
+	#wrapper.right {
+		.slider__item.left {
+			z-index: -10;
 		}
 	}
 
@@ -76,11 +22,23 @@ $slide: 'slide-04';
 			position: absolute;
 			height: 100%;
 			width: 100%;
-			transition: left 400ms;
+			transition: left 1s;
 			top: -104px;
 
 			img {
 				width: 100%;
+			}
+
+			&.active {
+				left: 0;
+			}
+			&.left {
+				left: -100%;
+				z-index: -5;
+			}
+			&.right {
+				left: 100%;
+				z-index: -5;
 			}
 		}
 	}
@@ -102,7 +60,7 @@ $slide: 'slide-04';
 	.trigger {
 		width: 925px;
 		height: 140px;
-		background: url('../../media/images/slide-04/slider-btns-panel.png') 50% 50% ;
+		background: url('../media/images/slide-04/slider-btns-panel.png') 50% 50% ;
 		background-size: cover;
 		color: #0366B3;
 		text-transform: uppercase;
@@ -121,6 +79,8 @@ $slide: 'slide-04';
 			flex: 1;
 			position: relative;
 			height: 100%;
+
+
 		}
 
 		&__item {
@@ -128,7 +88,18 @@ $slide: 'slide-04';
 			top: 50%;
 			transform: translateY(-50%);
 			width: 100%;
-			transition: left 400ms;
+			transition: opacity 400ms;
+			left: 0;
+
+			&.left {
+				opacity: 0;
+			}
+			&.active {
+				opacity: 1
+			}
+			&.right {
+				opacity: 0
+			}
 		}
 
 		&__btn {
