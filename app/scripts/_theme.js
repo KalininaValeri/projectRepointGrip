@@ -2,6 +2,15 @@
 var btnMenu = document.getElementById('btn--menu');
 var modalMenu = document.getElementById('menu');
 
+var arrLogos = document.getElementsByClassName('header__image');
+var popupInstr = document.getElementById('popup-instr')
+
+for (var j=0; j<arrLogos.length; j++) {
+  arrLogos[j].addEventListener('click', function() {
+    popupInstr.classList.add('active');
+  })
+}
+
 
 btnMenu.addEventListener('click', function(){
     modalMenu.classList.toggle('active');

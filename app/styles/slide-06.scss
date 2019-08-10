@@ -1,10 +1,49 @@
 $slide: 'slide-06';
 @import '_engine';
 .#{$slide} {
+	.content {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+
+	.pack {
+		position: absolute;
+		top: 140px;
+    right: 48px;
+    width: 312px;
+	}
+
+	.plashka {
+		width: 925px;
+		position: absolute;
+		top: 339px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 
 }
 // animations
 .#{$slide} {
+	.animation {
+		animation: opacity 400ms;
+		animation-delay: 400ms;
+		animation-fill-mode: forwards;
+		opacity: 0;
+
+		&--1 {
+			animation-delay: 400ms;
+		}
+
+		&--2 {
+			animation-delay: 600ms;
+		}
+	}
+
+	@keyframes opacity {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
 
 
 // inital state
